@@ -40,11 +40,11 @@ function Home(props) {
                             {/* <Image style={styles.donationImage} source={require("../../assets/images/donateblood.png")} /> */}
                         </View>
                         <View style={styles.donationTextContainer}>
-                            <Text style={styles.donationTextNum}>3232</Text>
+                            <Text style={styles.donationTextNum}>322</Text>
                             <Text style={styles.donationText}>People helped. If you neeed blood, You can post a blood reques here.</Text>
                             <TouchableOpacity 
                             style={styles.button}
-                            onPress={() => props.navigation.navigate("RequestBlood")}
+                            onPress={() => props.navigation.navigate("BloodRequest")}
                             activeOpacity={.8}
 
                         >
@@ -135,3 +135,5 @@ const styles = StyleSheet.create({
     },
 
 });
+
+

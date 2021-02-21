@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "28432189943",
-    "project_id": "bloodbank-a2773",
-    "storage_bucket": "bloodbank-a2773.appspot.com"
+    "project_number": "1029094377247",
+    "project_id": "reactnativebloodbank",
+    "storage_bucket": "reactnativebloodbank.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:28432189943:android:42cf67287760b2614cc6f2",
+        "mobilesdk_app_id": "1:1029094377247:android:ae800d44beafb7f7a7522a",
         "android_client_info": {
           "package_name": "com.bloodbankapp"
         }
       },
       "oauth_client": [
         {
-          "client_id": "28432189943-v96keunpb3fj1tb39798vopohfqnnrv0.apps.googleusercontent.com",
+          "client_id": "1029094377247-ij23i52kbi2teltol1fq7cru6cguatj8.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyD1eOLvZaa6FT6H1QYuGRQXlx9Bo8TbZZc"
+          "current_key": "AIzaSyCKz6xkeUyO8r-baLKclv3sPY2z3-NcqW8"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "28432189943-v96keunpb3fj1tb39798vopohfqnnrv0.apps.googleusercontent.com",
+              "client_id": "1029094377247-ij23i52kbi2teltol1fq7cru6cguatj8.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

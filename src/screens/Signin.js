@@ -13,7 +13,21 @@ import database from '@react-native-firebase/database';
             email,
             password
         }
+        // database().ref('Users/').set(user).then((data)=>{
+        //     //success callback
+        //     console.log('data ' , data)
+        // }).catch((error)=>{
+        //     //error callback
+        //     console.log('error ' , error)
+        // })
+    // }
         database().ref('/').child('users').push(user)
+    //     .then((data)=>{
+    //         console.log('data', data);
+    //     }).catch((error)=>{
+    //         console.log('error', error);
+    //     })
+    //     console.log("user", user);
     }
     
     return(
@@ -31,44 +45,34 @@ import database from '@react-native-firebase/database';
                 <TouchableOpacity
                     style={styles.button}
                     activeOpacity={.8}
-                    onPress={save_data}
+                    onPress={() => props.navigation.navigate("Home")}
                 >
                     <Text style= {{fontSize:24, color:"#fff", fontWeight:'bold' }} >Sign In</Text>
                 </TouchableOpacity>
             </View>
             <View>
                 <TouchableOpacity
-                style={styles.buttonfb}
+                style={styles.button}
                 activeOpacity={.8}
-                // onPress={onPress}
+                onPress={() => props.navigation.navigate("SignUp")}
             >
-            <Text style= {{fontSize:24, color:"#fff", fontWeight:'bold' }} >Sign In with Facebok </Text>
+            <Text style= {{fontSize:24, color:"#fff", fontWeight:'bold' }} >Register </Text>
             </TouchableOpacity>
             </View>
 
 
-            <View style>
-                <Text style= {{padding:10}} >
-                    Not a member? 
-                <TouchableOpacity onPress={() => props.navigation.navigate("BeDonor")}>
-                    <Text style={{color: 'blue',paddingLeft:10,}}>
-                    Click here to Register BecomeDonor
-                    </Text>
-                </TouchableOpacity>
-
-                </Text>
-            </View>
 
         
         </View>
-    )
-}
+    )}
+
 
 const styles=StyleSheet.create({
     container:{
         justifyContent:'center',
         alignContent: 'center',
-        
+
+        // alignItems:'center'
         // alignSelf:'center',
     },
     first:{

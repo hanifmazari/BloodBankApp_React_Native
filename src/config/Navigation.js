@@ -5,9 +5,7 @@ import Home from '../screens/Home'
 import Signin from '../screens/Signin'
 import SignUp from '../screens/SignUp'
 import BeDonor from '../screens/BeDonor'
-import RequestBlood from '../screens/RequestBlood'
-
-
+import  BloodRequest from "../screens/BloodRequest";
 
 const Stack = createStackNavigator();
 
@@ -15,13 +13,20 @@ function NavigationsApp() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
+      {/* <Stack.Screen name="newExp" component={RegisterOrLogin} /> */}
 
-      <Stack.Screen name="Home" component={Home} />
+      {/* <Stack.Screen name="AuthApp" component={AuthApp} /> */}
       <Stack.Screen name="Signin" component={Signin} />
-
       <Stack.Screen name="SignUp" component={SignUp} />
+      <Stack.Screen name="Home" component={Home} />
       <Stack.Screen name="BeDonor" component={BeDonor} />
-      <Stack.Screen name ="RequestBlood"component = {RequestBlood}/>
+      <Stack.Screen name="BloodRequest" component={BloodRequest} />
+
+
+
+
+
+
 
 
       
